@@ -20,7 +20,7 @@ https://github.com/tenclass/mvisor
 ```
 
 ```nix
-# modules/user-stephane/default.nix
+# modules/some-config.nix
 
 { pkgs, inputs, ... }:
 ...
