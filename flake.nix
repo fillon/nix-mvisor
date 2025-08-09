@@ -12,12 +12,10 @@
       system = "x86_64-linux";
       pkgs = import nixpkgs {
         inherit system;
-        # config.permittedInsecurePackages = [ "nodejs-16.20.2" ];
       };
     in
     {
-      # nix build .#example
-      # Custom packages to be shared or upstreamed.
+      # nix build .#mvisor
       packages.${system} = pkgs.callPackage ./pkgs { };
     };
 }
