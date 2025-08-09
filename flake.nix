@@ -16,6 +16,6 @@
     in
     {
       # nix build .#mvisor
-      packages.${system} = pkgs.callPackage ./pkgs { };
+      packages.${system}.mvisor = pkgs.callPackage ./pkgs/mvisor { };
     };
 }
