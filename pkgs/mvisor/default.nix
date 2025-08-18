@@ -31,7 +31,7 @@ pkgs.stdenv.mkDerivation rec {
     zstd
     alsa-lib
     SDL2
-    virglrenderer
+    pkgs-virglrenderer.virglrenderer
   ];
 
   configurePhase = ''
